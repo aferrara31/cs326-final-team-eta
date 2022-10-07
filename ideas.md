@@ -6,7 +6,7 @@
 **Team Overview**
 >	Aidan Ferrara, Github: aferrara31
 >	Raunak Bandyopadhyay, Github:
->	Kevin Smith, Github:
+>	Kevin Smith, Github: kevinmsmith131
 **Innovative Idea**
 >My First Idea
 
