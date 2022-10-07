@@ -46,7 +46,7 @@
 - Payment
 - Learning Lesson 
 
-- **Tech Stack**
+**Tech Stack**
 - Language: JavaScript
 - UI: React
 - Server: NodeJS
