@@ -36,8 +36,9 @@
 - Registration Page
 - Login Page
 - Home Page
-- Leaderboard Page
+- Profile Page
 - Learning Pages
+- Forum Page
 
 **Tech Stack**
 - Language: JavaScript
