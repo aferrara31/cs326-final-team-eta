@@ -1,6 +1,6 @@
 **Milestone 0 Project Documentation**
 >Team-eta
->>Application name: 
+>>Application name: TerraView
 
 
 **Team Overview**
@@ -30,6 +30,9 @@
       - Submit Button
       - Payment Form
 - Home Page
+      - Category
+      - Feed
+            - Exercise (with an option to navigate to the user's solution)
 - Profile Page
 - Learning Pages
 - Forum Page
@@ -52,5 +55,3 @@
 - Server: NodeJS
 - Database: MySQL
 - Cloud: Heroku Free Tier
-
-**Dependencies**
