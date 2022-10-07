@@ -30,4 +30,15 @@
 >>    We could add an exercise aspect to it, that's what could make it different from other web apps like it
 >>   give free points and set a timer and have them do a simple exercise
 
+      // Should we break the questions into categories (bio, chem, physics, geology, etc.)
+
 **Important Components**
+- Registration Page
+- Login Page
+- Home Page
+- Leaderboard Page
+- Learning Pages
+
+**Tech Stack**
+
+**Dependencies**
