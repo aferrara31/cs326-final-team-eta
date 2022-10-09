@@ -70,4 +70,4 @@
 - UI: React
 - Server: NodeJS
 - Database: MySQL
-- Cloud: Heroku Free Tier
+- Cloud: Amazon Amplify (Will need free AWS credits)
