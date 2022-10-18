@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "react": "^18.2.0",
+    "styled-components": "^5.3.6",
+    "webpack": "^5.74.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
