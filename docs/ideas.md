@@ -38,8 +38,13 @@
         - Problems
             - Button to See Poster's Solution
 - Profile Page
-    - Problems
-    - User Information
+    - Solutions Feed
+        - Solution 
+    - Profile Picture
+    - Username Header
+    - Number of Solves Header
+    - Logout Button (If the page belongs to the logged in user)
+    - Edit Profile Button (If the page belongs to the logged in user) 
 - Learning Page
     - Articles
     - Videos
