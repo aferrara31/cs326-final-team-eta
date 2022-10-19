@@ -1,13 +1,18 @@
 import React from 'react';
-import NavBar from './NavBar';
-import { Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import { 
+  BrowserRouter as Router, 
+  Routes, 
+  Route,
+} from 'react-router-dom';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={<NavBar />} />
-        <Route path="/navbar-wireframe" component={<NavBar />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/navbar-wireframe" element={<NavBar />} />
       </Routes>
     </Router>
   );
