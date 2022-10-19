@@ -16,7 +16,6 @@ const NavBar = ({ className }) => {
   );
 };
 
-
 const StyledNavBar = styled(NavBar)`
   display: flex;
   justify-content: space-around;
