@@ -1,0 +1,1 @@
+This file will detail all of the softwares this application uses, and explain their purpose, why this one was chosen, and details about how to use them if applicable

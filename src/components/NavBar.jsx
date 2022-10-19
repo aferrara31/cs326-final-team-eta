@@ -5,16 +5,14 @@ import { School as LearnButton } from '@styled-icons/material/School';
 import { Home as HomeButton } from '@styled-icons/material/Home';
 import { Person as ProfileButton } from '@styled-icons/material/Person';
 
-const NavBar = ({ className }) => {
-  return (
-    <div className={className} data-testid="navbar">
-      <ForumButton className="navbar-button" id="navbar-forum-button" />
-      <LearnButton className="navbar-button" id="navbar-learn-button" />
-      <HomeButton className="navbar-button" id="navbar-home-button" />
-      <ProfileButton className="navbar-button" id="navbar-profile-button" />
-    </div>
-  );
-};
+const NavBar = ({ className }) => (
+  <div className={className} data-testid="navbar">
+    <ForumButton className="navbar-button" id="navbar-forum-button" />
+    <LearnButton className="navbar-button" id="navbar-learn-button" />
+    <HomeButton className="navbar-button" id="navbar-home-button" />
+    <ProfileButton className="navbar-button" id="navbar-profile-button" />
+  </div>
+);
 
 const StyledNavBar = styled(NavBar)`
   display: flex;
