@@ -1,4 +1,6 @@
 {
+  "name": "terraview",
+  "version": "1.0.0",
   "dependencies": {
     "node": "^18.11.0",
     "react": "^18.2.0",
@@ -16,6 +18,10 @@
     "babel": "^6.23.0",
     "babel-loader": "^8.2.5",
     "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx": "^0.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "html-webpack-plugin": "^5.5.0",
     "jest": "^29.2.1",
     "prettier": "^2.7.1",
     "webpack": "^5.74.0",
@@ -23,10 +29,10 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "run": "webpack serve",
-    "build": "webpack",
+    "dev": "webpack serve",
+    "build": "webpack --mode development",
     "test": "jest",
-    "lint": "eslint"
+    "lint": "eslint ."
   },
   "prettier": {
     "useTabs": true,
@@ -38,13 +44,20 @@
   "eslintConfig": {
     "root": true,
     "plugins": [
-      "prettier"
+      "prettier",
+      "jsx"
     ],
     "extends": [
       "eslint:recommended",
       "prettier"
     ],
     "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "requireConfigFile": false,
+      "babelOptions": {
+        "presets": ["@babel/preset-react"]
+      }
+    },
     "env": {
       "browser": true,
       "node": true,

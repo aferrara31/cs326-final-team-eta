@@ -1,14 +1,14 @@
 import NavBar from './NavBar';
-import { Router, Switch, Route } from 'react-router-dom';
+import { Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route path="/navbar-wireframe">
           <NavBar />
         </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }
