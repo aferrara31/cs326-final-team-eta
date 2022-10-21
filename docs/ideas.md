@@ -81,7 +81,6 @@ Wireframes:
 
 Login/Registration Page:
 
-<img src="‪C:\Users\anfer\Downloads\LoginPage.png" alt="Alt text" title="Optional title">
 
 We plan to have a linked login and registration page where users will be able to sign into their account using their email and password, or potentially linking Google, Github, Twitter, etc. as a way to log in. 
 
