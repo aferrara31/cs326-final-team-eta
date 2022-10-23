@@ -1,0 +1,35 @@
+body
+{
+  background-color: azure;
+}
+
+.per-mo
+{
+  font-size: 0.75rem;
+}
+
+.tiers>div{
+  max-width: 20rem;
+  margin: 2rem;
+  border-radius: 5%;
+}
+
+#school
+{
+  background-color: hsl(145, 100%, 75%);
+}
+
+#premium
+{
+  background-color: hsl(145, 100%, 62.5%);
+}
+
+#pro
+{
+  background-color: hsl(145, 100%, 50%);
+}
+
+#quote
+{
+  max-width: 50rem;
+}
