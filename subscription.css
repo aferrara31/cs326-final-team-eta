@@ -1,6 +1,7 @@
 body
 {
   background-color: azure;
+  overflow-x: hidden;
 }
 
 .per-mo
