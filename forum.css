@@ -1,0 +1,91 @@
+.icon{
+  --radius: 1.5rem;
+  background-color: var(--txt, black);
+  width: var(--radius, 1.5rem);
+  height: var(--radius, 1.5rem);
+  border-radius: 50%;
+  margin: 0.4rem;
+  max-width: var(--radius);
+  min-width: var(--radius);
+  max-height: var(--radius);
+  min-height: var(--radius);
+}
+
+.heading{
+  margin-right: 2rem;
+  max-width: 80%;
+  overflow: hidden;
+}
+
+
+
+#forum-entries
+{
+  width: 20%;
+  min-width: 10rem;
+  max-width: 20vw;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.entry {
+  --bg: white;
+  --txt: black;
+  background-color: var(--bg, white);
+  color: var(--txt, black);
+	min-height: 3rem;
+	border-style: groove;
+  border-width: 1px;
+}
+
+.selected{
+  --bg: black;
+  --txt: white;
+ }
+
+#forum-entry
+{
+  width: 80%;
+  height: 100%;
+  overflow-y: auto ;
+}
+
+.forum-container{
+  width: 100vw;
+  height: 90vh;
+  max-height: 90vh;
+}
+
+#forum-entry>div{
+  border-style: ridge;
+  border-radius: 0.2rem;
+  border-width: 1px;
+}
+
+.main-question>div>.icon{
+  --radius: 3rem;
+}
+
+.reply{
+  --level: 1;
+  width: calc(80%/var(--level));
+  height: calc(10rem/var(--level));
+}
+
+.reply-lvl-1
+{
+  --level: 1;
+}
+.reply-lvl-2
+{
+  --level: 1.1;
+}
+.reply-lvl-3
+{
+  --level: 1.2;
+}
+
+.reply>.info
+{
+  height: 4rem;
+}
