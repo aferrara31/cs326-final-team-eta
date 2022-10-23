@@ -32,5 +32,4 @@ Our idea for a learning page includes a Q and A style learning that will allow s
 Division of Labor:
 
 Aidan Ferrara:
-
-Wireframes for the Login/Registration Page and the Learning Page. HTML and CSS for the Login/Registration Page and Learning Page. 
+>Wireframes for the Login/Registration Page and the Learning Page. HTML and CSS for the Login/Registration Page and Learning Page. 
