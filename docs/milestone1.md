@@ -10,6 +10,7 @@
 
 
 Wireframes:
+
 ![alt text](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/Wireframes1.PNG?raw=true)
 
 ![alt text](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/Wireframes2.PNG?raw=true)
