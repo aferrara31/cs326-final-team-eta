@@ -3,7 +3,7 @@
   background-color: var(--txt, black);
   width: var(--radius, 1.5rem);
   height: var(--radius, 1.5rem);
-  border-radius: 50%;
+  border-radius: 50% !important;
   margin: 0.4rem;
   max-width: var(--radius);
   min-width: var(--radius);
@@ -48,6 +48,8 @@
   width: 80%;
   height: 100%;
   overflow-y: auto ;
+  overflow-x: hidden;
+
 }
 
 .forum-container{
@@ -89,3 +91,22 @@
 {
   height: 4rem;
 }
+
+#add{
+  --txt: hsl(145, 100%, 50%);
+  --radius: 4rem;
+  color:white;
+  position: fixed;
+  bottom: 3%;
+  left: 22%;
+  z-index: 100;
+  border-width: 1px !important;
+  font-size: 2rem;
+  box-shadow: 2px 2px #888888;
+  cursor: pointer;
+}
+
+#add:hover{
+  --txt: hsl(145, 85%, 29%);
+}
+
