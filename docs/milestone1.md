@@ -13,6 +13,7 @@ Wireframes:
 
 
 UI Interfaces:
+
 Login/Registration Page:
 =![alt text](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/LoginPage.png?raw=true)
 We plan to have a linked login and registration page where users will be able to sign into their account using their email and password, or potentially linking Google, Github, Twitter, etc. as a way to log in. 
