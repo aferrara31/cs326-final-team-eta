@@ -28,7 +28,6 @@ Learning Page:
 ![alt text](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/LearningPage.png?raw=true)
 Our idea for a learning page includes a Q and A style learning that will allow students to ask questions on the app. Those questions can be answered by the teachers or education professionals who have also signed up for the app.
 
-
 Division of Labor:
 
 Aidan Ferrara:
