@@ -77,11 +77,3 @@
 - Database: MySQL
 - Cloud: Amazon Amplify (Will need free AWS credits)
 
-Wireframes:
-
-Login/Registration Page:
-
-
-We plan to have a linked login and registration page where users will be able to sign into their account using their email and password, or potentially linking Google, Github, Twitter, etc. as a way to log in. 
-
-The Registration page will allow people the ability to sign up for an account using their email and a password. Will need to link Google, Github, etc. if we decide to use those as means of loging in.
