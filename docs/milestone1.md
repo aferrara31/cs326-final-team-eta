@@ -8,6 +8,18 @@
 >	Raunak Bandyopadhyay, Github:
 >	Kevin Smith, Github: kevinmsmith131
 
+Data
+
+Questions (Would be Collected from 6-8th grade science curriculums per state. Would also be collected from notable textbooks.)
+Solutions
+Category
+User
+Forum Question
+Forum Response
+Email
+Password
+Payment
+Learning Lesson
 
 Wireframes:
 
