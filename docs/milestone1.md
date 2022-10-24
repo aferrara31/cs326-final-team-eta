@@ -40,7 +40,21 @@ Learning Page:
 ![alt text](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/LearningPage.png?raw=true)
 Our idea for a learning page includes a Q and A style learning that will allow students to ask questions on the app. Those questions can be answered by the teachers or education professionals who have also signed up for the app.
 
+Forum Page:
+![Forum Page Wireframe](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/Forum.png)
+Forum page is a space for discussion about general or specific topics. These can be answered by any user, and have threads to help discussion. New and Trending posts are displayed on the left.
+
+Subscription Page:
+![Subscription Page Wireframe](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/SubscriptionPage.png)
+Users can sign up for paid or free plans. It is free for anyone with a school or college email with full access to all features.
+
+Home Page:
+![Home Page Wireframe](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/Homepage.png)
+
 Division of Labor:
 
 Aidan Ferrara:
 >Wireframes for the Login/Registration Page and the Learning Page. HTML and CSS for the Login/Registration Page and Learning Page. We all contributed to the home page, and I handled the categories section.
+
+Raunak Bandyopadhyay
+>Wireframes for the subscription Page and the Forum Page. HTML and CSS for the subscription Page and the Forum Page. We all contributed to the home page, and I handled the questions section.

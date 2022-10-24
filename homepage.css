@@ -1,4 +1,6 @@
 #sidebar-wrapper{
+    height: 90vh;
+    width: 20vw;
     border-right: 3px solid #e7e7e7;
     border-bottom: 3px solid #e7e7e7;
     border-top: 3px solid #e7e7e7;
@@ -7,4 +9,27 @@
     margin-bottom: 20px;
     padding: 0;
 }
+
+#categories
+{
+    height: 80%;
+}
  
+#questions{
+    height: 90vh;
+}
+.question
+{
+    max-height: 10rem;
+    width: 70vw;
+    border-style: ridge;
+    border-width: 1px;
+    overflow-x: hidden;
+    border-radius: 0.25rem;
+}
+.btn{
+    background-color: teal;
+}
+.btn:hover{
+    background-color: rgb(1, 99, 99);
+}
