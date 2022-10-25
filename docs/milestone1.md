@@ -51,10 +51,13 @@ Users can sign up for paid or free plans. It is free for anyone with a school or
 Home Page:
 ![Home Page Wireframe](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/Homepage.png)
 
-Division of Labor:
+Division of Labor
 
 Aidan Ferrara:
 >Wireframes for the Login/Registration Page and the Learning Page. HTML and CSS for the Login/Registration Page and Learning Page. We all contributed to the home page, and I handled the categories section.
 
 Raunak Bandyopadhyay
 >Wireframes for the subscription Page and the Forum Page. HTML and CSS for the subscription Page and the Forum Page. We all contributed to the home page, and I handled the questions section.
+
+Kevin Smith
+>Wireframes for Navbar, Profile page, and Profile page for a logged in user. HTML and Bootstrap for navbar (combined with Raunak's efforts) and profile page.
