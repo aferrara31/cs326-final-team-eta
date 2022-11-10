@@ -35,5 +35,7 @@ Aidan Ferrara: I created the Login/Register, Learning Page, and Homepage API's f
  
  I tried to send fake data but could not get it to work.
 
+ Raunak Bandyopadhyay:
 
+ Updated UI for user for a forum post. Data collected in a form, stored in a database. Added server methods to handle requests
   
