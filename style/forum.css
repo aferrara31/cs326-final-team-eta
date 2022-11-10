@@ -1,3 +1,7 @@
+body{
+  height: 100vh;
+}
+
 .icon{
   --radius: 1.5rem;
   background-color: var(--txt, black);
@@ -108,5 +112,31 @@
 
 #add:hover{
   --txt: hsl(145, 85%, 29%);
+}
+
+
+/* x  category blank*/
+/* text*/
+/* x  category submit*/
+form{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+  height: 200px;
+  width: 600px;
+
+  background-color: darkslategrey;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+#close{
+  grid-area: 1/1/2/2;
 }
 
