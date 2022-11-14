@@ -17,7 +17,7 @@ Home Page API's:
    
    
 Link to Heroku hosted application:
-https://dashboard.heroku.com/apps/terraview
+https://terraview.herokuapp.com/
 
 
 Division of Labor:
