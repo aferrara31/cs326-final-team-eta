@@ -7,6 +7,11 @@ Database Documentation:
   
   The database is currently provisioned with one table, containing user information retrieved during registration. Below is an image of two example users in the database. They are identified by their name, email, and password, as well as an auto-incremental identification number. 
   
+  ![alt text](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/db1.png?raw=true)
+  
+  
+  ![alt text](https://github.com/aferrara31/cs326-final-team-eta/blob/main/docs/img/db2.png?raw=true)
+  
   
   
   
