@@ -99,3 +99,61 @@ a {
 .media img{
    width: 40px; height: auto;
 }
+
+
+#modal-container{
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+form{
+  margin: auto;
+
+  height: 60%;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 10px;
+
+  background-color: rgb(75, 174, 174);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+form>*{
+  border-radius: 8px;
+  margin: 0.1rem;
+}
+
+#close{
+  color: white;
+  text-align: center;
+  justify-items: left;
+  align-self: center;
+  grid-area: 1/1/2/2;
+}
+
+#category{
+  grid-area: 1/2/2/3;
+}
+
+#input-entry{
+  grid-area: 2/1/3/4;
+}
+
+#post{
+  grid-area: 3/3/4/4;
+}
+
+.center-grid{
+  justify-self: center;
+  align-self: center;
+}
