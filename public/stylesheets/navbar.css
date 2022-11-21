@@ -13,7 +13,7 @@ html{
 }
 
 .navbar>p:hover{
-  background-color: darkgray;
+  background-color: rgb(4, 169, 169);
 }
 
 .navbar>p{
