@@ -22,3 +22,5 @@ Database Documentation:
   Aidan Ferrara: Created, provisioned, and set up the PostgreSQL database. Implemented the functionality for the /register and /login api to send and retrieve data from the database. Created the userInfo table in the Database which houses important users information such as name, email, password, and identification number. This information can be used for login and registration as well as their contribution to the website. My tasks were to deal with connecting the registration and login as well as setting up the database. I contributed work to this milestone everyday since the end of milestone 2.
 
 Raunak Bandyopadhyay: Set up the server and integrate the multi-pages into the website. Added methods to add a forum post. Managed the database for the learning page.
+
+Kevin Smith: Drew out diagrams to get a better sense of the overall architechture, usage flow, and structure of the application.
