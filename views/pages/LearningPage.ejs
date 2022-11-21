@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="./stylesheets/learning.css">
         <link rel="stylesheet" type="text/css" href="./stylesheets/navbar.css">
         <script src = "./scripts/redirect.js"></script>
+        <script src = "./scripts/learning.js"></script>
 	</head>
 <body>
    <!-- <h1>TerraView Learning Page</h1> -->
@@ -22,7 +23,7 @@
             
     <div class="d-flex flex-wrap justify-content-between">
        <div>
-          <button type="button" class="btn btn-shadow btn-wide btn-primary">
+          <button type="button" class="btn btn-shadow btn-wide btn-primary" id = "add">
           <span class="btn-icon-wrapper pr-2 opacity-7">
           <i class="fa fa-plus fa-w-20"></i>
           </span>
@@ -179,6 +180,23 @@
        </ul>
     </nav>
 </div>
+
+<div id="modal-container">
+   <form>
+     <div id = "close">X</div>
+     <select name = "category" id = "category" class = "center-grid">
+       <option value="Biology">Biology</option>
+       <option value="Mathematics">Mathematics</option>
+       <option value="Astronomy">Astronomy</option>
+       <option value="Literature">Literature</option>
+       <option value="Social Studies">Social Studies</option>
+     </select>
+     <textarea id = "input-entry">
+ 
+     </textarea>
+     <input id= "post" type="button" value = "Post" class = "center-grid btn btn-primary">
+   </form>
+ </div>
 <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
 
 </body>
