@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aferrara31/cs326-final-team-eta/issues"
   },
-  "homepage": "https://github.com/aferrara31/cs326-final-team-eta#readme"
+  "homepage": "https://github.com/aferrara31/cs326-final-team-eta#readme",
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
 }
