@@ -11,7 +11,6 @@ const pool = new Pool({
   },
 });
 
-
 express()
   .use(express.static(path.join(__dirname, "public")))
   .set("views", path.join(__dirname, "views"))
@@ -29,7 +28,7 @@ express()
       res.send("Error " + err);
     }
   })
-  .get("/login", (req, res) => res.render("pages/LoginPage"))
+  .get("/login", (req, res) => res.render("pages/RegistrationPage"))
   .post("/login", (req, res) => res.send(db.getUsers))
   .get("/register", (req, res) => res.render("pages/RegistrationPage"))
   .post("/register", (req, res) => {
