@@ -24,3 +24,6 @@ Database Documentation:
 Raunak Bandyopadhyay: Set up the server and integrate the multi-pages into the website. Added methods to add a forum post. Managed the database for the learning page.
 
 Kevin Smith: Drew out diagrams to get a better sense of the overall architechture, usage flow, and structure of the application.
+
+Application: 
+https://terraviews.herokuapp.com/
