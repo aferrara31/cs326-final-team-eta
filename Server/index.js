@@ -28,7 +28,7 @@ express()
       res.send("Error " + err);
     }
   })
-  .get("/login", (req, res) => res.render("pages/RegistrationPage"))
+  .get("/login", (req, res) => res.render("pages/HomePage"))
   .post("/login", (req, res) => res.send(db.getUsers))
   .get("/register", (req, res) => res.render("pages/RegistrationPage"))
   .post("/register/:name/:email/:password", (req, res) => {
