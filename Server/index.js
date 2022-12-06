@@ -1,7 +1,6 @@
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 5000;
-const db = require("./queries");
 
 const { Pool } = require("pg");
 const pool = new Pool({
@@ -29,7 +28,6 @@ express()
     }
   })
   .get("/login", (req, res) => res.render("pages/LoginPage"))
-  .post("/login", (req, res) => res.send(db.getUsers))
   .get("/register", (req, res) => res.render("pages/RegistrationPage"))
   .post("/register/:name/:email/:password", (req, res) => {
     const name = req.params.name;
