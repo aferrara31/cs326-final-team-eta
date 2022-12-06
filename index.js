@@ -16,14 +16,16 @@ express()
   .set("view engine", "ejs")
   .get("/", (req, res) => res.render("pages/HomePage"))
   .get("/db", async (req, res) => {
-    pool.connect();
-    pool.query("SELECT * FROM userinfo;", (err, res) => {
-      if (err) throw err;
-      for (let row of res.rows) {
-        console.log(JSON.stringify(row));
-      }
-      pool.end();
-    });
+    try {
+      const client = await pool.connect();
+      const result = await client.query("SELECT * FROM userinfo;");
+      const results = { results: result ? result.rows : null };
+      res.render("pages/db", results);
+      client.release();
+    } catch (err) {
+      console.error(err);
+      res.send("Error " + err);
+    }
   })
   .get("/login", (req, res) => res.render("pages/LoginPage"))
   .get("/register", (req, res) => res.render("pages/RegistrationPage"))
