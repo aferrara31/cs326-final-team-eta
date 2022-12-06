@@ -29,10 +29,8 @@ express()
   })
   .get("/login", (req, res) => res.render("pages/LoginPage"))
   .get("/register", (req, res) => res.render("pages/RegistrationPage"))
-  .post("/register/:name/:email/:password", (req, res) => {
-    const name = req.params.name;
-    const email = req.params.email;
-    const password = req.params.password;
+  .post("/register", (req, res) => {
+    const { name, email, password } = req.body;
     pool.query(
       "SELECT email FROM userinfo WHERE email = $1",
       [email],
