@@ -19,7 +19,7 @@ express()
   .get("/db", async (req, res) => {
     try {
       const client = await pool.connect();
-      const result = await client.query("SELECT * FROM userInfo");
+      const result = await client.query("SELECT * FROM userinfo");
       const results = { results: result ? result.rows : null };
       res.render("pages/db", results);
       client.release();
@@ -31,10 +31,12 @@ express()
   .get("/login", (req, res) => res.render("pages/RegistrationPage"))
   .post("/login", (req, res) => res.send(db.getUsers))
   .get("/register", (req, res) => res.render("pages/RegistrationPage"))
-  .post("/register", (req, res) => {
-    const { name, email, password } = req.body;
+  .post("/register/:name/:email/:password", (req, res) => {
+    const name = req.params.name;
+    const email = req.params.email;
+    const password = req.params.password;
     pool.query(
-      "SELECT email FROM userInfo WHERE email = $1",
+      "SELECT email FROM userinfo WHERE email = $1",
       [email],
       async (error, results) => {
         if (error) {
@@ -48,7 +50,7 @@ express()
       }
     );
     pool.query(
-      "INSERT INTO userInfo (name, email, password) VALUES ($1, $2, $3) RETURNING *",
+      "INSERT INTO userinfo (name, email, password) VALUES ($1, $2, $3) RETURNING *",
       [name, email, password],
       (error, results) => {
         if (error) {
