@@ -1,6 +1,15 @@
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 5000;
+const cookieParser = require("cookie-parser");
+const doenv = require("dotenv");
+const hbs = require("hbs");
+
+const app = express();
+
+doenv.config({
+  path: "./.env",
+});
 
 const { Pool } = require("pg");
 const pool = new Pool({
@@ -10,11 +19,16 @@ const pool = new Pool({
   },
 });
 
-express()
-  .use(express.static(path.join(__dirname, "public")))
-  .set("views", path.join(__dirname, "views"))
-  .set("view engine", "ejs")
-  .get("/", (req, res) => res.render("pages/HomePage"))
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: false }));
+
+app.use(express.static(path.join(__dirname, "public")));
+app.set("view engine", "hbs");
+hbs.registerPartials(path.join(__dirname, "views/pages"));
+
+app.use("/", require("./routes/web"));
+app.use("/auth", require("./routes/auth"));
+app
   .get("/db", async (req, res) => {
     try {
       const client = await pool.connect();
@@ -27,37 +41,4 @@ express()
       res.send("Error " + err);
     }
   })
-  .get("/login", (req, res) => res.render("pages/LoginPage"))
-  .get("/register", (req, res) => res.render("pages/RegistrationPage"))
-  .post("/register", (req, res) => {
-    const { name, email, password } = req.body;
-    pool.query(
-      "SELECT email FROM userinfo WHERE email = $1",
-      [email],
-      async (error, results) => {
-        if (error) {
-          console.log(error);
-        }
-        if (res.length > 0) {
-          return results.render("register", {
-            message: "This email is already in use",
-          });
-        }
-      }
-    );
-    pool.query(
-      "INSERT INTO userinfo (name, email, password) VALUES ($1, $2, $3) RETURNING *",
-      [name, email, password],
-      (error, results) => {
-        if (error) {
-          throw error;
-        } else {
-          return results.render("pages/LoginPage", {
-            message: "User registered",
-          });
-        }
-      }
-    );
-  })
-  .get("/learning", (req, res) => res.render("pages/LearningPage"))
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
