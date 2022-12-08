@@ -18,5 +18,8 @@ router.get("/learning", (req, res) => {
   res.render("pages/LearningPage");
 });
 
+router.get("/profile", (req, res) => {
+  res.render("pages/profileog");
+});
 
 module.exports = router;
