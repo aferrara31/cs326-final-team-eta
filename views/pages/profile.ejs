@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TerraView.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/profile.css">
+</head>
+
+
+<body>
+
+
+<div class="container">
+<div class = "title">
+    <h2> TerraView Profile Page </h2>
+</div>
+<div class = "user-container">
+<ul>
+    <div class = "name">
+    <% results.forEach(function(r) { %>
+        <h3> Name </h3>
+        <%= r.name %>
+    </div>
+    <div class = "email">
+        <h3> Email </h3>
+            <ul>
+                <%= r.email %>
+            </ul>
+    </div>
+    <% }); %>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>

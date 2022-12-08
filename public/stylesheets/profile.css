@@ -1,0 +1,58 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background:green;
+}
+.container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    background: #5199E4;
+    width: 410px;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+h3{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.name{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.email{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
