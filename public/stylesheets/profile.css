@@ -1,58 +1,105 @@
 body{
+    background-color:green;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    }
+
+    .container{
     height: 100vh;
+    }
+
+    .title{
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    color:#5199E4;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    .card{
+
+    width: 380px;
+    border: none;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #5199E4;
+    position: relative;
+    height: 445px;
+    }
+
+    .name{
+    font-size: large;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+    .email{
+        font-size: large;
+        font-weight: 400;
+        text-align: center;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    .upper{
+
+    height: 175px;
+
+    }
+
+    .upper img{
+
     width: 100%;
-    background:green;
-}
-.container{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
-.title{
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+    }
 
-.user-container{
+    .user{
+    position: relative;
+    }
+
+    .profile img{
+ 
+    height: 80px;
+    width: 80px;
+    margin-top: -25px;
+    
+    }
+
+    .profile{
+
     position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: block;
-    background: #5199E4;
-    width: 410px;
-    padding: 30px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-h3{
-    font-size: xx-large;
+    top:-50px;
+    left: 38%;
+    height: 90px;
+    width: 90px;
+    border:px solid #fff;
+
+    border-radius: 50%;
+
+    }
+    .stats span{
+
+    font-size: 29px;
+    }
+
+    .mb-0{
+    font-size: x-large;
     font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
+    }
+.logout{
+align-items: center;
+align-content: center; 
 }
-.name{
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.email{
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
+button{
+font-size: large;
+font-weight: bold;
+margin-top: 10px;
+font-family: 'Times New Roman', Times, serif;
 }
 
 
