@@ -106,3 +106,18 @@ form .signup-link a:hover{
   align-items: center
 }
 
+   .profile img{
+ 
+    height: 75px;
+    width: 105px;
+    margin-top: 20px;
+    
+    }
+
+  .profile{
+    height: auto;
+    width: auto;
+    border:px solid #fff;
+
+    border-radius: 50%;
+    }
