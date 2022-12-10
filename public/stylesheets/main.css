@@ -78,6 +78,7 @@ form .forgot-pass a:hover{
 }
 
 form .btn{
+  margin: 15px;
   height: 45px;
   width: 100%;
 }
