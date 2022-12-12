@@ -57,7 +57,8 @@ app.get("/learning", async (req, res) => {
       const currDay = date.getDate();
       const currMonth = date.getMonth() + 1;
       const currYear = date.getFullYear();
-
+      
+      console.log(typeof(post.created), post.created);
       const created = post.created.split("-");
       
       if(currMonth > created[1])
