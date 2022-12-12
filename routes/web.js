@@ -14,9 +14,9 @@ router.get("/home", (req, res) => {
   res.render("pages/HomePage");
 });
 
-// router.get("/learning", (req, res) => {
-//   res.render("pages/LearningPage");
-// });
+router.get("/learning", (req, res) => {
+  res.render("pages/LearningPage");
+});
 
 router.get("/profile", (req, res) => {
   res.render("pages/profileog");

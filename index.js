@@ -43,20 +43,20 @@ app.get("/profile/:email", async function (req, res) {
   }
 });
 
-app.get("/learning", async (req, res) => {
-  try{
-  const client = await pool.connect();
-  const result = await client.query("SELECT * FROM postinfo;");
-  const results = {posts: result ? result.rows : null};
-  res.send(results);
-  // res.render("pages/LearningPage", results);
-  client.release();
-  }
-  catch(err){
-    console.error(err);
-    res.send("Error " + err);
-  }
-});
+// app.get("/learning", async (req, res) => {
+//   try{
+//   const client = await pool.connect();
+//   const result = await client.query("SELECT * FROM postinfo;");
+//   const results = {posts: result ? result.rows : null};
+//   res.send(results);
+//   // res.render("pages/LearningPage", results);
+//   client.release();
+//   }
+//   catch(err){
+//     console.error(err);
+//     res.send("Error " + err);
+//   }
+// });
 
 app
   .get("/db", async (req, res) => {
