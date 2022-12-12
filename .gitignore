@@ -5,6 +5,8 @@ npm-debug.log
 # Local development
 *.env
 *.dev
+*.sql
+*.txt
 .DS_Store
 
 # Docker
