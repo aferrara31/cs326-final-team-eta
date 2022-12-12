@@ -48,7 +48,6 @@ app.get("/learning", async (req, res) => {
   const client = await pool.connect();
   const result = await client.query("SELECT * FROM postinfo;");
   const results = {posts: result ? result.rows : null};
-  // res.send(results);
   res.render("pages/LearningPage", results);
   client.release();
   }

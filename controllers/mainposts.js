@@ -7,28 +7,13 @@ const pool = new Pool({
   },
 });
 
-const addPost = (req, res) => {
+exports.addPost = async (req, res) => {
+  try{
+    const {category, header} = req.body;
+    const date = new Date();
 
-};
-
-const upvote = (req, res) => {
-  const {pid} = req.body;
-
-  pool.query("UPDATE postinfo SET upvote = $2 WHERE id = $1", 
-    [pid, upvote], (error, results) => {
-      res.render("")
-    });
-  
-};
-
-const downvote = (req, res) => {
-
-};
-
-const removePost = (req, res) => {
-
-};
-
-const editPost = (req, res) => {
-
+    pool.query("INSERT INTO postinfo (header, category, created, modified) VALUES ($1, $2, $3, $3)",
+      header, category, date, date,
+      (error, result) => {});
+  }catch(e){}
 };
