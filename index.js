@@ -42,6 +42,54 @@ app.get("/profile/:email", async function (req, res) {
     res.send("Error " + err);
   }
 });
+
+app.get("/learning", async (req, res) => {
+  try{
+  const client = await pool.connect();
+  const result = await client.query("SELECT * FROM postinfo ORDERBY modified;");
+  const results = {posts: result ? result.rows : null};
+  if(result != null){
+    
+    results.posts = results.posts.map(post => {
+      const obj = {header:post.header, init: "", currMod: "", replies: 0, author: "A Ferrara"};
+      const date = new Date();
+  
+      const currDay = date.getDate();
+      const currMonth = date.getMonth() + 1;
+      const currYear = date.getFullYear();
+
+      const created = post.created.split("-");
+      
+      if(currMonth > created[1])
+        obj.init = "a month ago";
+      else if(+created[2] - +currDay == 0)
+        obj.init = "Today";
+      else if(+created[2] - +currDay == 1)
+        obj.init = "1 day ago";
+      else
+        obj.init = +created[2] - +currDay + " days ago";
+
+      const modified = post.modified.split("-");
+
+      if(currMonth > modified[1])
+        obj.currMod = "a month ago";
+      else if(+modified[2] - +currDay == 0)
+        obj.currMod = "Today";
+      else if(+modified[2] - +currDay == 1)
+        obj.currMod = "1 day ago";
+      else
+        obj.currMod = +modified[2] - +currDay + " days ago";
+    });
+    res.render("pages/learning", posts);
+  }
+  client.release();
+  }
+  catch(err){
+    console.error(err);
+    res.send("Error " + err);
+  }
+});
+
 app
   .get("/db", async (req, res) => {
     try {
