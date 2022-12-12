@@ -14,6 +14,8 @@ exports.addPost = async (req, res) => {
 
     pool.query("INSERT INTO postinfo (header, category, created, modified) VALUES ($1, $2, $3, $3)",
       header, category, date, date,
-      (error, result) => {});
+      (error, result) => {
+        res.status(200).redirect("/learning");
+      });
   }catch(e){}
 };
