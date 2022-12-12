@@ -27,7 +27,7 @@ app.set("views", path.join(__dirname, "views"));
 
 app.use("/", require("./routes/web"));
 app.use("/auth", require("./routes/auth"));
-app.use("/posts", require("./routes/post"));
+app.use("/post", require("./routes/post"));
 app.get("/profile/:email", async function (req, res) {
   try {
     const client = await pool.connect();
