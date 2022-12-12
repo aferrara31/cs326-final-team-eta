@@ -46,45 +46,20 @@
              </div>
           </div>
        </div>
-      
-       <!--
 
-       <% posts.map((post, index) => (%>
-         <div class="card-body py-3">
-           <div class="row no-gutters align-items-center">
-              <div class="col">
-                  <a href="javascript:void(0)" class="text-big" data-abc="true"><%=post.header%></a> 
-                 <div class="text-muted small mt-1">Started <%=post.created%> &nbsp;&middot;&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true"></a></div>
-              </div>
-              <div class="d-none d-md-block col-4">
-                 <div class="row no-gutters align-items-center">
-                    <div class="col-4">0</div>
-                    <div class="media col-8 align-items-center">
-                       <div class="media-body flex-truncate ml-2">
-                           <div class="line-height-1 text-truncate"><%=post.modified%></div>
-                          <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by A Ferrara</a>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-        <hr class="m-0">
-        <% )) %>
-      -->
+      <%posts.forEach(post => %>
        <div class="card-body py-3">
           <div class="row no-gutters align-items-center">
              <div class="col">
-                <a href="javascript:void(0)" class="text-big" data-abc="true">More Questions</a>
-                <span class="badge badge-secondary align-text-bottom ml-1">Closed</span>
-                <div class="text-muted small mt-1">Started 25 days ago &nbsp;&middot;&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">Some Name</a></div>
+                <a href="javascript:void(0)" class="text-big" data-abc="true"><%= post.header %></a>
+                <div class="text-muted small mt-1">Started <%= post.created %> </div>
              </div>
              <div class="d-none d-md-block col-4">
                 <div class="row no-gutters align-items-center">
-                   <div class="col-4">53</div>
+                   <div class="col-4">0</div>
                    <div class="media col-8 align-items-center">
                       <div class="media-body flex-truncate ml-2">
-                         <div class="line-height-1 text-truncate">1 day ago</div>
+                         <div class="line-height-1 text-truncate"><%= post.modified%></div>
                          <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by Aidan Ferrara</a>
                       </div>
                    </div>
@@ -93,26 +68,8 @@
           </div>
        </div>
        <hr class="m-0">
-       <div class="card-body py-3">
-          <div class="row no-gutters align-items-center">
-             <div class="col">
-                <a href="javascript:void(0)" class="text-big" data-abc="true">More Questions</a>
-                <span class="badge badge-danger align-text-bottom ml-1">Hot!</span>
-                <div class="text-muted small mt-1">Started 25 days ago &nbsp;&middot;&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">Some Name</a></div>
-             </div>
-             <div class="d-none d-md-block col-4">
-                <div class="row no-gutters align-items-center">
-                   <div class="col-4">12</div>
-                   <div class="media col-8 align-items-center">
-                      <div class="media-body flex-truncate ml-2">
-                         <div class="line-height-1 text-truncate">1 day ago</div>
-                         <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by Aidan Ferrara</a>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
+      <%)%>
+
     </div>
     
     <nav>
@@ -127,7 +84,7 @@
 </div>
 
 <div id="modal-container">
-   <form method="post" id = "add-post">
+   <form id="add-post">
      <div id = "close">X</div>
      <select name = "category" id = "category" class = "center-grid">
        <option value="Biology">Biology</option>
