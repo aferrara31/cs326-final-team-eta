@@ -80,6 +80,7 @@ app.get("/learning", async (req, res) => {
       //   obj.currMod = "1 day ago";
       // else
       //   obj.currMod = +modified[2] - +currDay + " days ago";
+      return obj;
     });
     res.render("pages/learning", results);
   }
