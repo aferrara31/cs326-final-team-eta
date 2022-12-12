@@ -46,7 +46,7 @@ app.get("/profile/:email", async function (req, res) {
 app.get("/learning", async (req, res) => {
   try{
   const client = await pool.connect();
-  const result = await client.query("SELECT * FROM postinfo ORDERBY modified;");
+  const result = await client.query("SELECT * FROM postinfo;");
   const results = {posts: result ? result.rows : null};
   if(result != null){
     
