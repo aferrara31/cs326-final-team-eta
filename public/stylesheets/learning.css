@@ -114,7 +114,9 @@ a {
   z-index: 100;
 }
 
-form{
+#add-post{
+  display: grid;
+
   margin: auto;
 
   height: 60%;
@@ -128,7 +130,7 @@ form{
   grid-template-rows: 1fr 2fr 1fr;
 }
 
-form>*{
+#add-post>*{
   border-radius: 8px;
   margin: 0.1rem;
 }
