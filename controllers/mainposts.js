@@ -13,7 +13,7 @@ exports.addPost = async (req, res) => {
     const date = new Date();
 
     pool.query("INSERT INTO postinfo (header, category, created, modified) VALUES ($1, $2, $3, $3)",
-      header, category, date, date,
+      [header, category, date, date],
       (error, result) => {
         res.status(200).redirect("/learning");
       });
