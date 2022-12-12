@@ -81,7 +81,7 @@ app.get("/learning", async (req, res) => {
       // else
       //   obj.currMod = +modified[2] - +currDay + " days ago";
     });
-    res.render("pages/learning", posts);
+    res.render("pages/learning", results);
   }
   client.release();
   }
